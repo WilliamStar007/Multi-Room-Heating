@@ -37,6 +37,9 @@ The system will have h<sub>i</sub> (power status of the header in the room) and 
 - a constant vector c = [c<sub>i</sub>] ∈ R<sup>4</sup>, 
 - initial temperature of each room in a vector x<sub>0</sub> ∈ R<sup>4</sup>.
 
+A simple model of the room is built in the [Google Collab notebook](https://colab.research.google.com/drive/1gZphM4oSAg27RGblI-a3MU5yguD2y-WQ?usp=sharing). 
+More modification of current model will be made to work with the designed controller.
+
 ### Design of the Controller
 The controller will have parameters
 - constants on<sub>i</sub> in a vector on = [on<sub>i</sub>] ∈ R<sup>4</sup>,
