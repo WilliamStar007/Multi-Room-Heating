@@ -24,16 +24,28 @@ A heater is moved from room j to room i (i ！= j) if all the followings hold:
 - Temperature x<sub>i</sub> ≤ get<sub>i</sub>
 - The difference x<sub>j</sub> − x<sub>i</sub> ≥ dif<sub>i</sub>.
 
+The get<sub>i</sub> and dif<sub>i</sub> are constants that can differ across different rooms.
+
 ### Requirement Specifications
 - The temperature in all rooms is always between a given threshold (Safety)
 - Every room will eventually get a heater that is on. (Liveness)
 
 ### Design of Room Heating System
 The system will have h<sub>i</sub> (power status of the header in the room) and u (outside temperature) as inputs. The system will be parameterized by the following constants:
-- a constant matrix A = [a<sub>i,j</sub>] ∈ R4×4,
-- a constant vector b = [b<sub>i</sub>] ∈ R4,
-- a constant vector c = [c<sub>i</sub>] ∈ R4, 
-- initial temperature of each room in a vector x<sub>0</sub> ∈ R4.
+- a constant matrix A = [a<sub>i,j</sub>] ∈ R<sup>4×4</sup>,
+- a constant vector b = [b<sub>i</sub>] ∈ R<sup>4</sup>,
+- a constant vector c = [c<sub>i</sub>] ∈ R<sup>4</sup>, 
+- initial temperature of each room in a vector x<sub>0</sub> ∈ R<sup>4</sup>.
+
+### Design of the Controller
+The controller will have parameters
+- constants on<sub>i</sub> in a vector on = [on<sub>i</sub>] ∈ R<sup>4</sup>,
+- constants off<sub>i</sub> in a vector off = [off<sub>i</sub>] ∈ R<sup>4</sup>,
+- constants get<sub>i</sub> in a vector get = [get<sub>i</sub>] ∈ R<sup>4</sup>, 
+- constants dif<sub>i</sub> in a vector dif = [dif<sub>i</sub>] ∈ R<sup>4</sup>.
+
+The inputs to controller are temperatures x<sub>i</sub>. The outputs should be h<sub>i</sub> for each room i, with the constraints that h<sub>i</sub> ∈ {0,1} and at any time, at most two of these outputs can be 1 (only 2 heaters can be on).
+
 
 ### Model Component Logic Flow
 <img width="600" alt="Screenshot 2023-11-10 at 8 08 20 PM" src="https://github.com/JaneWu423/CS6376-FinalProject/assets/89805831/755ef469-a4cc-4cb5-beb8-72a008ddcdc6">
