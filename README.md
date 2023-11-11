@@ -31,7 +31,7 @@ For Safety Requirement:
 
 ### Design of Room Heating System
 The system will have h<sub>i</sub> (power status of the header in the room) and u (outside temperature) as inputs. The system will be parameterized by the following constants:
-- matrix A = [a<sub>i,j</sub>] ∈ R4×4 representing the distance between rooms,
+- a constant matrix A = [a<sub>i,j</sub>] ∈ R4×4,
 - a constant vector b = [b<sub>i</sub>] ∈ R4,
 - a constant vector c = [c<sub>i</sub>] ∈ R4, 
 - initial temperature of each room in a vector x<sub>0</sub> ∈ R4.
