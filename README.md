@@ -35,3 +35,5 @@ The system will have h<sub>i</sub> (power status of the header in the room) and 
 - a constant vector c = [c<sub>i</sub>] ∈ R4, 
 - initial temperature of each room in a vector x<sub>0</sub> ∈ R4.
 
+### Model Component Logic Flow
+<img width="600" alt="Screenshot 2023-11-10 at 8 08 20 PM" src="https://github.com/JaneWu423/CS6376-FinalProject/assets/89805831/755ef469-a4cc-4cb5-beb8-72a008ddcdc6">
