@@ -26,7 +26,7 @@ A heater is moved from room j to room i (i ！= j) if all the followings hold:
 
 ### Requirement Specifications
 - The temperature in all rooms is always between a given threshold (Safety)
-- Every room will eventually get a heater that is on. (Liveliness)
+- Every room will eventually get a heater that is on. (Liveness)
 
 ### Design of Room Heating System
 The system will have h<sub>i</sub> (power status of the header in the room) and u (outside temperature) as inputs. The system will be parameterized by the following constants:
