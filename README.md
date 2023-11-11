@@ -16,5 +16,23 @@ Let x<sub>i</sub> be the temperature in room i (i = 1,2,3,4), u being the outsid
 
 with constants a<sub>i,j</sub>, b<sub>i</sub>, c<sub>i</sub>. In this equation, h<sub>i</sub> ∈ {0,1} is the power status of the heater in the room: h<sub>i</sub> is 0 if there is no heater or the heater is off, h<sub>i</sub> = 1 if there is a heater and is on. We assume that all the heaters are identical. If a<sub>i, j</sub> > 0 then rooms i and j are adjacent.
 
-### Design of Room Model
+### Movement of heaters
+
+A heater is moved from room j to room i (i ！= j) if all the followings hold:
+- Room i has no heater (each room can have at most one heater)
+- Room j has a heater
+- Temperature xi ≤ geti
+- The difference xj − xi ≥ difi.
+
+### Requirement Specifications
+For Safety Requirement:
+- The temperature in all rooms is always between a given threshold (in this project it will be between 15 and 20 degree Celsius)
+- Only 2 rooms at the same time can have the heater.
+
+### Design of Room Heating System
+The system will have h<sub>i</sub> (power status of the header in the room) and u (outside temperature) as inputs. The system will be parameterized by the following constants:
+- matrix A = [a<sub>i,j</sub>] ∈ R4×4 representing the distance between rooms,
+- a constant vector b = [b<sub>i</sub>] ∈ R4,
+- a constant vector c = [c<sub>i</sub>] ∈ R4, 
+- initial temperature of each room in a vector x<sub>0</sub> ∈ R4.
 
