@@ -21,13 +21,12 @@ with constants a<sub>i,j</sub>, b<sub>i</sub>, c<sub>i</sub>. In this equation, 
 A heater is moved from room j to room i (i ！= j) if all the followings hold:
 - Room i has no heater (each room can have at most one heater)
 - Room j has a heater
-- Temperature xi ≤ geti
-- The difference xj − xi ≥ difi.
+- Temperature x<sub>i</sub> ≤ get<sub>i</sub>
+- The difference x<sub>j</sub> − x<sub>i</sub> ≥ dif<sub>i</sub>.
 
 ### Requirement Specifications
-For Safety Requirement:
-- The temperature in all rooms is always between a given threshold (in this project it will be between 15 and 20 degree Celsius)
-- Only 2 rooms at the same time can have the heater.
+- The temperature in all rooms is always between a given threshold (Safety)
+- Every room will eventually get a heater that is on. (Liveliness)
 
 ### Design of Room Heating System
 The system will have h<sub>i</sub> (power status of the header in the room) and u (outside temperature) as inputs. The system will be parameterized by the following constants:
