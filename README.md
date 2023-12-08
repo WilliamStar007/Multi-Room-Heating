@@ -42,6 +42,8 @@ The system will have h<sub>i</sub> (vent status) and u (outside temperature) as 
 - a constant vector c = [c<sub>i</sub>] ∈ R<sup>4</sup>, 
 - initial temperature of each room in a vector x<sub>0</sub> ∈ R<sup>4</sup>.
 
+The inputs to the system will be outside temperature and output from the controller. The output will be current temperature. The temperature of the rooms will be calculated using the room dynamics formula given above.
+
 ### Design of the Controller
 The controller will have parameters
 - constants on<sub>i</sub> in a vector on = [on<sub>i</sub>] ∈ R<sup>4</sup>,
@@ -49,8 +51,7 @@ The controller will have parameters
 - constants get<sub>i</sub> in a vector get = [get<sub>i</sub>] ∈ R<sup>4</sup>, 
 - constants dif<sub>i</sub> in a vector dif = [dif<sub>i</sub>] ∈ R<sup>4</sup>.
 
-The inputs to controller are temperatures x<sub>i</sub>. The outputs should be h<sub>i</sub> for each room i, with the constraints that h<sub>i</sub> ∈ {0,1} and at any time, at most two of these outputs can be 1 (only 2 heaters can be on).
-
+The inputs to controller are temperatures x<sub>i</sub>. The outputs should be h<sub>i</sub> for each room i, with the constraints that h<sub>i</sub> ∈ {0,1} and at any time, at most two of these outputs can be 1 (only 2 vents can be on).
 
 ### Model Component Logic Flow
 <img width="600" alt="Screenshot 2023-11-10 at 8 08 20 PM" src="https://github.com/JaneWu423/CS6376-FinalProject/assets/89805831/755ef469-a4cc-4cb5-beb8-72a008ddcdc6">
