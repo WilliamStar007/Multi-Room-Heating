@@ -8,7 +8,8 @@ Repo for final project for the class CS6357 hybrid &amp; embedded systems at Van
 # Project Proposal
 [Project Initial Choice.pdf](https://github.com/JaneWu423/CS6376-FinalProject/files/13272777/Project.Initial.Choice.pdf)
 
-# Intermediate Update
+# Project Presentation Slides
+[Presentation Google Slides](https://docs.google.com/presentation/d/11mU_nW_fXvMXEo77R5Aph6IkYLEQ7t2BdWsd3m9e64o/edit?usp=sharing)
 
 ### Problem Statement
 
@@ -60,3 +61,16 @@ The inputs to controller are temperatures x<sub>i</sub>. The outputs should be h
 The python implementation of the whole system can be found in the [Google Collab notebook](https://colab.research.google.com/drive/1gZphM4oSAg27RGblI-a3MU5yguD2y-WQ?usp=sharing). Simply click "run all" in Colab, and you can see the simulation results in plots in the end of the file.
 
 The Simulink implementation of the system is in this repo, and you can run the simulation and inspect the components by downloading the .slx file and open it in MATLAB Simulink, simply click "simulate" and you can inspect the simulation results in the display components in the model.
+
+### Design in Simulink
+#### Overall Design
+<img width="842" alt="Screen Shot 2023-12-08 at 6 19 48 PM" src="https://github.com/JaneWu423/CS6376-FinalProject/assets/73491595/3ffdf087-bf2f-4ec8-b4ae-33390969ae98">
+
+#### Room System Design
+<img width="922" alt="Screen Shot 2023-12-08 at 6 20 45 PM" src="https://github.com/JaneWu423/CS6376-FinalProject/assets/73491595/5265df5a-e12b-4af3-bb86-a310d50dbf2c">
+
+#### Controller Design
+<img width="642" alt="Screen Shot 2023-12-08 at 6 21 27 PM" src="https://github.com/JaneWu423/CS6376-FinalProject/assets/73491595/a18e236b-f2f6-4062-b456-fab58fa9e0c6">
+
+#### Safety Monitor Design
+<img width="530" alt="Screen Shot 2023-12-08 at 6 21 51 PM" src="https://github.com/JaneWu423/CS6376-FinalProject/assets/73491595/1d6ad9cd-58df-49b8-a3b1-08883507a30d">
