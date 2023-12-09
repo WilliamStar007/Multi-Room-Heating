@@ -74,3 +74,7 @@ The Simulink implementation of the system is in this repo, and you can run the s
 
 #### Safety Monitor Design
 <img width="530" alt="Screen Shot 2023-12-08 at 6 21 51 PM" src="https://github.com/JaneWu423/CS6376-FinalProject/assets/73491595/1d6ad9cd-58df-49b8-a3b1-08883507a30d">
+
+#### Project Demo Video
+https://github.com/JaneWu423/CS6376-FinalProject/assets/73491595/05fec211-dad7-4efa-819f-117b7846dc86
+
