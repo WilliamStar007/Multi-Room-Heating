@@ -60,7 +60,7 @@ The inputs to the controller are temperatures x<sub>i</sub>. The outputs should 
 ### Model Implementation
 The Python implementation of the whole system can be found in the [Google Collab notebook](https://colab.research.google.com/drive/1gZphM4oSAg27RGblI-a3MU5yguD2y-WQ?usp=sharing). Simply click "run all" in Colab, and you can see the simulation results in plots at the end of the file.
 
-The Simulink implementation of the system is in this repo, and you can run the simulation and inspect the components by downloading the .slx file and opening it in MATLAB Simulink, simply click "simulate" and you can inspect the simulation results in the display components in the model.
+The Simulink implementation of the system is in this repo, and you can run the simulation and inspect the components by downloading the .slx file and opening it in MATLAB Simulink, simply click "Run" and you can inspect the simulation results in the display components in the model by double clicking the Display Scope blocks.
 
 ### Design in Simulink
 #### Overall Design
