@@ -1,15 +1,4 @@
-# CS6376-FinalProject
-Repo for final project for the class CS6357 hybrid &amp; embedded systems at Vanderbilt University
-
-# Project Description
-[Project_Description.pdf](https://github.com/JaneWu423/CS6376-FinalProject/files/13532765/description.pdf)
-
-
-# Project Proposal
-[Project Initial Choice.pdf](https://github.com/JaneWu423/CS6376-FinalProject/files/13272777/Project.Initial.Choice.pdf)
-
-# Project Presentation Slides
-[Presentation Google Slides](https://docs.google.com/presentation/d/11mU_nW_fXvMXEo77R5Aph6IkYLEQ7t2BdWsd3m9e64o/edit?usp=sharing)
+## Project Description
 
 ### Problem Statement
 
@@ -55,7 +44,7 @@ The controller will have parameters
 The inputs to the controller are temperatures x<sub>i</sub>. The outputs should be h<sub>i</sub> for each room i, with the constraints that h<sub>i</sub> ∈ {0,1} and at any time, at most two of these outputs can be 1 (only 2 vents can be on).
 
 ### Model Component Logic Flow
-<img width="600" alt="Screenshot 2023-11-10 at 8 08 20 PM" src="https://github.com/JaneWu423/CS6376-FinalProject/assets/89805831/755ef469-a4cc-4cb5-beb8-72a008ddcdc6">
+<img width="600" alt="Screenshot 2023-11-10 at 8 08 20 PM" src="https://github.com/WilliamStar007/Multi-Room-Heating/assets/89805831/8c31d822-91bf-47db-bdbe-d056459fbc06">
 
 ### Model Implementation
 The Python implementation of the whole system can be found in the [Google Collab notebook](https://colab.research.google.com/drive/1gZphM4oSAg27RGblI-a3MU5yguD2y-WQ?usp=sharing). Simply click "run all" in Colab, and you can see the simulation results in plots at the end of the file.
@@ -64,17 +53,16 @@ The Simulink implementation of the system is in this repo, and you can run the s
 
 ### Design in Simulink
 #### Overall Design
-<img width="842" alt="Screen Shot 2023-12-08 at 6 19 48 PM" src="https://github.com/JaneWu423/CS6376-FinalProject/assets/73491595/3ffdf087-bf2f-4ec8-b4ae-33390969ae98">
+<img width="842" alt="Screen Shot 2023-12-08 at 6 19 48 PM" src="https://github.com/WilliamStar007/Multi-Room-Heating/assets/89805831/e63ea9b1-37f5-467a-9f92-0feacec8061f">
 
 #### Room System Design
-<img width="922" alt="Screen Shot 2023-12-08 at 6 20 45 PM" src="https://github.com/JaneWu423/CS6376-FinalProject/assets/73491595/5265df5a-e12b-4af3-bb86-a310d50dbf2c">
+<img width="922" alt="Screen Shot 2023-12-08 at 6 20 45 PM" src="https://github.com/WilliamStar007/Multi-Room-Heating/assets/89805831/388414f7-8c4d-4757-8abc-89bdc558d125">
 
 #### Controller Design
-<img width="642" alt="Screen Shot 2023-12-08 at 6 21 27 PM" src="https://github.com/JaneWu423/CS6376-FinalProject/assets/73491595/a18e236b-f2f6-4062-b456-fab58fa9e0c6">
+<img width="642" alt="Screen Shot 2023-12-08 at 6 21 27 PM" src="https://github.com/WilliamStar007/Multi-Room-Heating/assets/89805831/e07afe2c-5c21-4bb4-9c7f-a7becd021466">
 
 #### Safety Monitor Design
-<img width="530" alt="Screen Shot 2023-12-08 at 6 21 51 PM" src="https://github.com/JaneWu423/CS6376-FinalProject/assets/73491595/1d6ad9cd-58df-49b8-a3b1-08883507a30d">
+<img width="530" alt="Screen Shot 2023-12-08 at 6 21 51 PM" src="https://github.com/WilliamStar007/Multi-Room-Heating/assets/89805831/98b0276e-9776-47c5-970a-e2cddab3f320">
 
 #### Project Demo Video
-https://github.com/JaneWu423/CS6376-FinalProject/assets/73491595/05fec211-dad7-4efa-819f-117b7846dc86
-
+https://github.com/WilliamStar007/Multi-Room-Heating/assets/89805831/8d6a97b2-4863-4d20-b199-76be60f7cd01
